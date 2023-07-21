@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #1d5b79;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  /* overflow: hidden; */
+}
+
+.container {
+  z-index: 999;
+  background-color: #468b97;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: clamp(280px, 60%, 500px);
+  padding: 1rem;
+  box-shadow: 0 0 10px #0a1f29af;
+}
+
+.container h1,
+p,
+label,
+button {
+  margin-bottom: 0.75em;
+}
+
+.container h1 {
+  border: 2px solid black;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+  background-color: #f3aa60;
+}
+.form {
+  text-align: center;
+}
+.form label {
+  font-weight: 600;
+}
+
+.form input[type="number"] {
+  border: 2px solid black;
+  background-color: #81bfca;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.3em 0.75em;
+  width: 200px;
+}
+
+.submitBtn {
+  text-align: center;
+}
+
+.form input[type="submit"] {
+  cursor: pointer;
+  background-color: #f3aa60;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.3em 0.75em;
+  transition: 0.15s;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #f8c38d;
+}
+
+.form input[type="submit"]:active {
+  transition: 0.09s;
+  background-color: #ef6262;
+  color: white;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+.guesses {
+  font-weight: 500;
+}
+
+.numbers {
+  user-select: none;
+  position: absolute;
+  font-weight: 900;
+  color: #8dd1dd57;
+}
+
+#one {
+  position: absolute;
+  top: -35rem;
+  left: -25rem;
+  font-size: 30rem;
+  transform: rotate(25deg);
+}
+
+#thirty-three {
+  position: absolute;
+  top: -10rem;
+  left: -60rem;
+  font-size: 20rem;
+  transform: rotate(15deg);
+}
+
+#forty-two {
+  position: absolute;
+  top: -10rem;
+  left: 20rem;
+  font-size: 25rem;
+  transform: rotate(15deg);
+}
+
+#fifty-six {
+  position: absolute;
+  top: -25rem;
+  left: 40rem;
+  font-size: 10rem;
+  transform: rotate(-25deg);
+}
+
+#sixty-nine {
+  position: absolute;
+  top: -20rem;
+  left: 8rem;
+  font-size: 12rem;
+  transform: rotate(45deg);
+}
+
+#hundred {
+  position: absolute;
+  top: 9rem;
+  left: -25rem;
+  font-size: 18rem;
+  transform: rotate(-30deg);
+  z-index: -10;
+}
